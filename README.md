@@ -52,3 +52,55 @@ Affinity - chooses where to put the pod according to the labels of the node.
 
 Anti-affinity - prevents the pods from being scheduled on the same node or close to each other, and ensures separation. Helps in distributing loads over different nodes
 </details>
+
+<details>
+<summary>What is daemonset in k8s?</summary>
+It's a component that uploads a pod on every node in the cluster. This is for example for an agent that pulls metrics on the node like the node exporter in Prometheus.
+</details>
+
+<details>
+<summary>What is PV and PVC?</summary>
+
+PV (Persistent Volume):
+is a physical or virtual storage unit in k8s. This is an independent disk intended to include application data in k8s.
+
+PVC (Persistent Volume Claim):
+is the request made by the user (in a pod) to receive storage from the PV
+</details>
+
+<details>
+<summary>What is helm?</summary>
+its a tool for managing and installing applications in Kubernetes.
+It allows you to organize your applications within units that wrap each application called charts, and it allows you to install them easily and you can change things in the application through one file where we simply change the values.
+</details>
+
+<details>
+<summary>What is ingress?</summary>
+It is a component that routes requests by subdomain, as soon as it is created it addresses a certain controller that creates an external LB and its uniqueness is that it is possible through one LB to access several services by subdomain or path.
+</details>
+
+<details>
+<summary>What are the differences in services in k8s?</summary>
+
+cluster ip:
+This is the basic type of every service and it only gives us internal access to the service without access from the outside
+
+NodePort:
+It uses the public ip of the node where the pod is located and gives us access to the service through a certain port
+
+load balancer:
+As soon as it is created, it creates an NLB in the cloud that is configured and as soon as we access the created NLB, it leads us to the service
+</details>
+
+<details>
+<summary>What is kube-scheduler?</summary>
+It is a component in k8s that is responsible for scheduling created pods into nodes in the cluster. Its main purpose is to select suitable nodes for pods based on various factors such as resource requirements.
+</details>
+
+<details>
+<summary>What is hpa and vpa?</summary>
+These are two components in k8s that are responsible for auto scaling to pods in deployment
+Based on cpu and memory, and each one does auto scaling with a different approach.
+ hpa does scaling by increasing and decreasing the amount of pods in the deployment.
+On the other hand, the vpa does scaling by increasing and decreasing the resources allocated to the pods in the deployment.
+</details>
