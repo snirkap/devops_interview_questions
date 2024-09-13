@@ -82,6 +82,7 @@ It is a component that routes requests by subdomain, as soon as it is created it
 <details>
 <summary>What are the differences in services in k8s?</summary>
 
+
 cluster ip:
 This is the basic type of every service and it only gives us internal access to the service without access from the outside
 
