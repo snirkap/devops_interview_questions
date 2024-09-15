@@ -23,7 +23,7 @@ A deadlock is a situation in which one process tries to access a certain resourc
 
 <details>
 <summary>What is the difference between process and thread?</summary><b>
-process is basically software that runs on the processor with resources defined for Process such as cpu, memory and ip, it does not share these resources with other Processes.
+process is basically software that runs on the processor with resources defined for Process, it does not share these resources with other Processes.
 A thread, on the other hand, is part of a process, a process can have several threads running at the same time that will share its resources.
 </b></details>
 
