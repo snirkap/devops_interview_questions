@@ -43,7 +43,7 @@ In deployment the pods share volume and pvc while in sts each pod has its own vo
 <summary>Why are containers better than VMs?</summary><b>
 
 Containers have already become the standard in the market, they replace VMs mainly because they provide better utilization of resources because they share the same operating system with other containers.
-Virtual machines are more resource optimization at the infrastructure level, instead of needing a server for each application you can set up several virtual servers on the same hardware, the servers will be completely isolated from each other, each will have its own operating system and they can sit on the same iron even if their operating system different.
+Virtual machines are more resource optimization at the infrastructure level, instead of needing a server for each application you can set up several virtual servers on the same hardware, the servers will be completely isolated from each other, each will have its own operating system and they can sit on the same hardware even if their operating system different.
 
 Because a container contains exactly what it needs to run, it takes less time to upload and download a container because the weight of its image is usually measured in megabytes than to upload and download a machine whose image weight will usually be several gigabytes, in addition you can run several containers on the same vm so you can run multiple applications on the same machine.
 </b></details>
